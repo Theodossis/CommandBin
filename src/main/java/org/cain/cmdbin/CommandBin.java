@@ -127,7 +127,7 @@ public class CommandBin extends JavaPlugin
       System.out.println("[CommandBin] Disabling CommandBin due to this..");
       Bukkit.getServer().getPluginManager().disablePlugin(this);
     } else {
-      registerCommands();
+      registerCommands(); // ...
     }
   }
 
