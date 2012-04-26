@@ -1,0 +1,272 @@
+name: CommandBin
+version: '2.28 - CONSOLE SUPPORT TESTING'
+author: CainFoool
+main: org.cain.cmdbin.CommandBin
+commands:
+   accept:
+       description: 'Accept a teleportation request'
+       usage: /accept <player>
+   addxp:
+       description: 'Add an amount of XP to a current player'
+       usage: /addxp <player> <amount>
+   ask:
+       description: 'Ask a player to teleport to you'
+       usage: /ask <player>
+   back:
+       description: 'Teleport to your previous location'
+       usage: /back
+   blind:
+       description: 'make someone blind'
+       usage: /blind <player>
+   block:
+       description: 'Block a player from placing blocks'
+       usage: /block <player>
+   bolt:
+       description: 'Create lightning where you look'
+       usage: /bolt
+   broadcast:
+       description: 'Broadcast a Message to all players'
+       usage: /broadcast <message>
+   chunk:
+       description: 'Reload the current chunk you are in'
+       usage: /chunk
+   clear:
+       description: 'Clear your inventory'
+       usage: /clear
+   createworld:
+       description: 'Create a world'
+       usage: /createworld <name>
+   creative:
+       description: 'Switch your GM to creative'
+       usage: /creative
+   deny:
+       description: 'Deny a request to teleport someone to you'
+       usage: /deny <player>
+   disablehardcore:
+       description: 'Disable hardcore mode on your server'
+       usage: /disablehardcore
+   drunk:
+       description: 'Make a player feel dizzy for 60 seconds'
+       usage: /drunk <player>
+   enablehardcore:
+       description: 'Enable hardcore mode on your server'
+       usage: /enablehardcore <world hardcore mode is on> <world to teleport to>
+   explode:
+       description: 'Explode a player'
+       usage: /explode <player>
+   explosionbow:
+       description: 'Give yourself an explosion bow'
+       usage: /explosionbow
+   fakeop:
+       description: 'Send a trolling message to someone'
+       usage: /fakeop <player>
+   feed:
+       description: 'Feed yourself'
+       usage: /feed
+   freeze:
+       description: 'Freeze a player'
+       usage: /freeze <player>
+   fsay:
+       description: 'Say a message as somebody else'
+       usage: /fsay <player> <message>
+   getxp:
+       description: 'Get a players current experience'
+       usage: /getxp <player>
+   gm:
+       description: 'Switch your gamemode faster'
+       usage: /gm
+   gmo:
+       description: 'Change the gamemode of another player'
+       usage: /gmo <player>
+   god:
+       description: 'Simple but effective god mode'
+       usage: /god
+   growtree:
+       description: 'Grow a tree where you are'
+       usage: /growtree
+   handicap:
+       description: 'Stop a player from using commands'
+       usage: /handicap <player>
+   heal:
+       description: 'Heal a player'
+       usage: /heal
+   home:
+       description: 'Teleport to your home'
+       usage: /home
+   ip:
+       description: 'Get a players current IP address'
+       usage: /ip <player>
+   isvanished:
+       description: 'Checks to see if a player is vanished'
+       usage: /isvanished <player>
+   join:
+       description: 'Send a fake join message'
+       usage: /join
+   kill:
+       description: 'Kill yourself'
+       usage: /kill
+   leave:
+       description: 'Send a fake leave message'
+       usage: /leave
+   lock:
+       description: 'Halt the server from performing chat or placing blocks'
+       usage: /lock
+   mhome:
+       description: 'Teleport to a multihome'
+       usage: /mhome
+   msethome:
+       description: 'Set a multihome'
+       usage: /msethome <home>
+   msg:
+       description: 'Message a player'
+       usage: /msg <player> <message>
+   mute:
+       description: 'Mute a player'
+       usage: /mute <player>
+   nick:
+       description: 'Set the nickname of a player'
+       usage: /nick <nickname>
+   potion:
+       description: 'Give a player a potion'
+       usage: /potion <player> <potion> <time>
+   put:
+       description: 'Put a player where you are looking at'
+       usage: /put <player>
+   ram:
+       description: 'Get the available RAM left on your server'
+       usage: /ram
+   realname:
+       description: 'Get the real name of a player if they got a nick'
+       usage: /realname <player>
+   sethome:
+       description: 'Set your home teleportation'
+       usage: /sethome
+   setlevel:
+       description: 'Set a players level'
+       usage: /setlevel <player> <level>
+   setspawn:
+       description: 'Set the current world spawn to your location'
+       usage: /setspawn
+   setwarp:
+       description: 'Set a warp'
+       usage: /setwarp <name>
+   setxp:
+       description: 'Set a players experience points'
+       usage: /setxp <player> <points>
+   shoot:
+       description: 'Shoot a player into the air'
+       usage: /shoot <player>
+   slap:
+       description: 'Slap a player'
+       usage: /slap <player>
+   spawn:
+       description: 'Teleport to the world spawn'
+       usage: /spawn
+   strike:
+       description: 'Strike a player with lightning'
+       usage: /strike <player>
+   sudo:
+       description: 'Run a command as console'
+       usage: /sudo <command>
+   survival:
+       description: 'Set your GM to survival'
+       usage: /survival
+   tent:
+       description: 'Make a tent'
+       usage: /tent
+   thor:
+       description: 'Place an explosion where you are looking'
+       usage: /thor
+   time:
+       description: 'Set the time to day or night'
+       usage: /time <day / night>
+   tp2p:
+       description: 'Teleport 1 person to another'
+       usage: /tp2p <player1> <player2>
+   tpall:
+       description: 'Teleport all online players to you'
+       usage: /tpall
+   tp:
+       description: 'Teleport to a player'
+       usage: /tp <player>
+   tphere:
+       description: 'Teleport a player to your location'
+       usage: /tphere <player>
+   tphome:
+       description: 'Teleport to another players home'
+       usage: /tphome <player>
+   tpworld:
+       description: 'Teleport to a server world'
+       usage: /tpworld <world>
+   unblock:
+       description: 'Allow a player to place blocks'
+       usage: /unblock <player>
+   unfreeze:
+       description: 'Unfreeze a player'
+       usage: /unfreeze <player>
+   unhandicap:
+       description: 'Allow a player to use commands'
+       usage: /unhandicap <player>
+   unloadworld:
+       description: 'Unload a server world'
+       usage: /unloadworld <name>
+   unlock:
+       description: 'Reallow the server to chat/place blocks'
+       usage: /unlock
+   unmute:
+       description: 'Allow a player to speak again'
+       usage: /unmute <player>
+   vanish:
+       description: 'Set your visibility status'
+       usage: /vanish
+   warp:
+       description: 'Teleport to a warp'
+       usage: /warp <name>
+   weather:
+       description: 'Set your weather on current world'
+       usage: /weather sun/rain
+   bold:
+       description: 'Send a bold message'
+       usage: /bold <message>
+   strikethrough:
+       description: 'Send a strikethrough message'
+       usage: /strikethrough <message>
+   italic:
+       description: 'Send a italic message'
+       usage: /italic <message>
+   underline:
+       description: 'Send a underline message'
+       usage: /underline <message>
+   spawner:
+       description: 'Change a mob spawner'
+       usage: /spawner <mob>
+   afk:
+       description: 'Sets your status  to afk'
+       usage: /afk
+   commandbin:
+       description: 'CommandBin command'
+       usage: /commandbin <version,credits,update>
+   killall:
+       description: 'Kills all players on the server'
+       usage: /killall
+   tpc:
+       description: 'Teleport to specified co-ordinates'
+       usage: /tpc <x> <y> <z>
+   sky:
+       description: 'Teleport a player to the skys!'
+       usage: /sky <player>
+   void:
+       description: 'Teleport a player to the void!'
+       usage: /void <player>
+   troll:
+       description: 'Troll a player'
+       usage: /troll <player>
+   spawnmob:
+       description: 'Spawn a mob'
+       usage: /spawnmob <mob> <amount>
+   item:
+       description: 'Give yourself an item'
+       usage: /item <item> <amount>
+   hole:
+       description: 'Send a player down a hole'
+       usage: /hole <player>
