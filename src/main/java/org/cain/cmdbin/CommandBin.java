@@ -113,7 +113,6 @@ public class CommandBin extends JavaPlugin
   public static boolean updateAvailable;
   public static String updateVersion;
   
-  // Spout Plugin Support removed (Was useless)
 
   public void onEnable()
   {
