@@ -140,7 +140,7 @@ public class CommandBin extends JavaPlugin
     getConfig().addDefault("enable-in-game-autoupdate", true);
     getConfig().addDefault("download-update", true);
     getConfig().addDefault("enable-debug-mode", false);
-    getConfig().options().copyDefaults(true); //
+    getConfig().options().copyDefaults(true);
     saveConfig();
   }
 
