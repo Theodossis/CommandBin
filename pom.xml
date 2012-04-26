@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>CommandBin</groupId>
   <artifactId>CommandBin</artifactId>
-  <version>1.28-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>CommandBin</name>
   
 	<repositories>
