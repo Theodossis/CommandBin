@@ -112,6 +112,7 @@ public class CommandBin extends JavaPlugin
   public static CommandBin plugin;
   public static boolean updateAvailable;
   public static String updateVersion;
+  public static boolean DynmapEnabled;
   
 
   public void onEnable()
@@ -128,6 +129,11 @@ public class CommandBin extends JavaPlugin
       Bukkit.getServer().getPluginManager().disablePlugin(this);
     } else {
       registerCommands(); // ...
+    }
+    
+    if(Bukkit.getServer().getPluginManager().getPlugin("Dynmap") != null) {
+    	DynmapEnabled = true;
+    	System.out.println("[CommandBin] Detected Dynmap is enabled. Vanish will now hide players.");
     }
   }
 
