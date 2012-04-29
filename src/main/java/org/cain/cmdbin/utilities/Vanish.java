@@ -17,7 +17,7 @@ public class Vanish
     for (Player otherPlayers : Bukkit.getServer().getOnlinePlayers()) {
       otherPlayers.hidePlayer(p);
       invisiblePlayers.put(p.getName(), Boolean.valueOf(true));
-      if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(otherPlayers, false);
+      if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(p, false);
     }
   }
 
@@ -25,7 +25,7 @@ public class Vanish
     for (Player otherPlayers : Bukkit.getServer().getOnlinePlayers()) {
       otherPlayers.showPlayer(p);
       invisiblePlayers.remove(p.getName());
-      if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(otherPlayers, true);
+      if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(p, true);
     }
   }
 }
