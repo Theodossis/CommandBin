@@ -15,7 +15,15 @@ public class FsayCommand
   {
     if (l.equalsIgnoreCase("fsay")) {
       if (args.length < 2) return false;
-      if (!(s instanceof Player)) return false;
+      if (!(s instanceof Player)) {
+    	  Player target = Bukkit.getServer().getPlayer(args[0]);
+    	  StringBuilder x = new StringBuilder();
+    	  for(int i = 1; i < args.length; i++) {
+    		  x.append(args[i] + " ");
+    	  }
+    	  if(target != null) target.chat(x.toString().trim());
+    	  return true;
+      }
       if (!CommandBin.permissionCheck((Player)s, "CommandBin.fsay")) {
         Chat.noPermissionMessage((Player)s);
         return true;

@@ -16,7 +16,19 @@ public class GmCommand
   public boolean onCommand(CommandSender s, Command c, String l, String[] args)
   {
     if (l.equalsIgnoreCase("gm")) {
-      if (!(s instanceof Player)) return false;
+      if (!(s instanceof Player)) {
+    	  Player target = Bukkit.getServer().getPlayer(args[0]);
+          if (target != null) {
+            if (target.getGameMode() == GameMode.CREATIVE) {
+              target.setGameMode(GameMode.SURVIVAL);
+              Chat.consoleMessage(target + "'s gamemode has been set to survival");
+            } else {
+              target.setGameMode(GameMode.CREATIVE);
+              Chat.consoleMessage(target + "'s gamemode has been set to creative");
+            }
+          }
+          return true;
+      }
       if (!CommandBin.permissionCheck((Player)s, "CommandBin.gm")) {
         Chat.noPermissionMessage((Player)s);
         return true;

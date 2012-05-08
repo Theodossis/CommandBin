@@ -133,7 +133,7 @@ public class CommandBin extends JavaPlugin
     
     if(Bukkit.getServer().getPluginManager().getPlugin("dynmap") != null) {
     	DynmapEnabled = true;
-    	System.out.println("[CommandBin] Detected Dynmap is enabled. Vanish will now hide players.");
+    	System.out.println("[CommandBin] Detected Dynmap is enabled. Vanish support will be coming soon.");
     }
   }
 

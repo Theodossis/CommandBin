@@ -19,7 +19,10 @@ public class GmoCommand
   public boolean onCommand(CommandSender s, Command c, String l, String[] args) {
     if (l.equalsIgnoreCase("gmo")) {
       if (args.length < 1) return false;
-      if (!(s instanceof Player)) return false;
+      if (!(s instanceof Player)) {
+    	  Chat.consoleMessage("Use /gm <player> instead.");
+    	  return true;
+      }
       if (!CommandBin.permissionCheck((Player)s, "CommandBin.gmo")) {
         Chat.noPermissionMessage((Player)s);
         return true;

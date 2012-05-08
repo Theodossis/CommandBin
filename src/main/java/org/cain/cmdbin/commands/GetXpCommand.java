@@ -16,7 +16,13 @@ public class GetXpCommand
   {
     if (l.equalsIgnoreCase("getxp")) {
       if (args.length < 1) return false;
-      if (!(s instanceof Player)) return false;
+      if (!(s instanceof Player)) {
+    	  Player target = Bukkit.getServer().getPlayer(args[0]);
+    	  if(target != null) {
+    		  Chat.consoleMessage(target.getName() + " currently has " + XP.getExperience(target) + " experience points");
+    	  }
+    	  return true;
+      }
       if (!CommandBin.permissionCheck((Player)s, "CommandBin.getxp")) {
         Chat.noPermissionMessage((Player)s);
         return true;

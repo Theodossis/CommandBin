@@ -10,14 +10,14 @@ import org.dynmap.DynmapAPI;
 public class Vanish
 {
 	
-	static DynmapAPI dynapi;
+  static DynmapAPI dynapi;
   public static HashMap<String, Boolean> invisiblePlayers = new HashMap<String, Boolean>();
 
   public static void makePlayerInvisible(Player p) {
     for (Player otherPlayers : Bukkit.getServer().getOnlinePlayers()) {
       otherPlayers.hidePlayer(p);
       invisiblePlayers.put(p.getName(), Boolean.valueOf(true));
-      if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(p, false);
+    //  if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(p, false);
     }
   }
 
@@ -25,7 +25,7 @@ public class Vanish
     for (Player otherPlayers : Bukkit.getServer().getOnlinePlayers()) {
       otherPlayers.showPlayer(p);
       invisiblePlayers.remove(p.getName());
-      if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(p, true);
+    //  if(CommandBin.DynmapEnabled) dynapi.setPlayerVisiblity(p, true);
     }
   }
 }

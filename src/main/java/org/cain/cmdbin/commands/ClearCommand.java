@@ -1,5 +1,6 @@
 package org.cain.cmdbin.commands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -21,8 +22,18 @@ public class ClearCommand
         Chat.noPermissionMessage((Player)s);
         return true;
       }
+      if(args.length < 1) {
       ((Player)s).getInventory().clear();
       Chat.pMessage((Player)s, "Inventory cleared");
+      return true;
+      } else {
+    	  Player target = Bukkit.getServer().getPlayer(args[0]);
+    	  if(target != null) {
+    		  target.getInventory().clear();
+    		  Chat.pMessage((Player) s, target.getName() + "'s inventory cleared");
+    		  return true;
+    	  }
+      }
     }
     return true;
   }
